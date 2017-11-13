@@ -18,6 +18,26 @@ $color_background_servicios: #f7f7f7;
   width: 100%;
 }
 
+.boton {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $color_celeste;
+  color: white;
+  padding: 15px 30px;
+  display: block;
+  font-weight: bold;
+  max-width: 170px;
+  font-size: 12px;
+  margin: 0px auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.boton:hover {
+  background-color: white;
+  color: black;
+}
+
 .descripcion-seccion {
   font-family: sans-serif;
   text-align: center;
@@ -127,6 +147,7 @@ header {
 /*
 banner*/
 .banner {
+  overflow: hidden;
   margin: 0px;
   .video_banner {
     min-width: 100%;
@@ -151,24 +172,7 @@ banner*/
     margin-bottom: 35px;
     font-size: 38px;
   }
-  .boton {
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $color_celeste;
-    color: white;
-    padding: 15px 30px;
-    display: block;
-    font-weight: bold;
-    max-width: 170px;
-    font-size: 12px;
-    margin: 0px auto;
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-  .boton:hover {
-    background-color: white;
-    color: black;
-  }
+
 }
 
 .banner:after {
@@ -289,39 +293,188 @@ banner*/
 .portfolio {
   clear: both;
   font-family: sans-serif;
-  margin: 0px 35px;
+  /* margin: 0px 35px;*/
   padding: 70px 0px;
   background-color: white;
-  .image-portfolio {
-    width: 30%;
-    position: relative;
-    img{
-      width: 100%;
-      margin: 0px;
-    }
-    .overlay-portfolio{
-      text-transform: uppercase;
-      padding: 20px 60px;
-      text-align: center;
-      position: absolute;
-      height: 98.5%;
-      width: 100%;
-      background-color: black;
-      background: linear-gradient(0deg, rgba(3, 169, 244, 0.9) 0%,rgba(3, 169, 244, 0) 75%);
-      top: 0px;
-      h4{
-        background-color: white;
-        padding: 10px 20px;
-        margin: 5px 0px;
+  .portafolio-galeria {
+    overflow: hidden;
+    .image-portfolio {
+      overflow: hidden;
+      width: 33.333%;
+      height: auto;
+      position: relative;
+      float: left;
+      /* max-height: 240px;*/
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: block;
       }
-      a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
+      .overlay-portfolio {
+        clear: both;
+        text-transform: uppercase;
+        padding: 60px 0px 20px 0px;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background: linear-gradient(0deg, rgba(3, 169, 244, 0.9) 0%, rgba(3, 169, 244, 0) 75%);
+        top: 0px;
+        opacity: 0;
+        transform: translateY(33px);
+        transition: opacity 250ms ease, transform 250ms ease;
+        h4 {
+          background-color: white;
+          padding: 10px 20px;
+          margin: 5px auto;
+          overflow-wrap: break-word;
+          width: 60%;
+          position: relative;
+          top: 25%;
+          /*        -ms-word-wrap: break-word;  */
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          display: block;
+          margin-top: 7%;
+          position: relative;
+          top: 55%;
+        }
+      }
+      .overlay-portfolio:hover {
+        opacity: 1;
+        transform: translateY(0px);
+
+      }
+
+    }
+    @media (max-width: 768px) {
+      .image-portfolio {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+/*fin portfolio*/
+
+/*expertos*/
+.expertos {
+  background-color: $color_background_servicios;
+  padding: 70px 0px;
+  text-align: center;
+  font-family: sans-serif;
+  /*overflow: hidden;*/
+  .expertos-galeria {
+    display: flex;
+    .experto {
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      -ms-word-wrap: break-word;
+      background-color: white;
+      padding: 10px;
+      width: 25%;
+      border-radius: 2%;
+      /*float: left;*/
+      margin: 24px 10px;
+      box-shadow: 0px 0px 0px 0px grey;
+      transition: box-shadow 250ms 0s;
+      img {
+        width: 100%;
+      }
+      figcaption {
+        h3 {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        p {
+          text-transform: capitalize;
+          margin: 10px 0px;
+        }
+        a {
+          margin: 6px 2px;
+          padding: 15px;
+          text-decoration: none;
+          color: white;
+          border-radius: 100%;
+        }
+        .fa-facebook {
+          background-color: $color_facebook;
+          padding: 15px 18px;
+        }
+        .fa-twitter {
+          background-color: $color_twitter;
+        }
+        .fa-google-plus {
+          background-color: $color_google;
+          padding: 15px 12px;
+        }
+        .fa-linkedin {
+          background-color: $color_linkedin;
+        }
+      }
+
+    }
+
+    .experto:hover {
+      box-shadow: 0px 28px 32px -1px grey;
+    }
+  }
+  @media (max-width: 768px) {
+    .expertos-galeria {
+      display: flex;
+      flex-wrap: wrap;
+      .experto {
+        width: 100%;
       }
     }
 
   }
-
 }
 
+/*fin expertoss*/
+/*touch*/
+
+.touch {
+
+  padding: 70px 0px;
+  form {
+    display: flex;
+    flex-flow: row wrap;
+    .input-touch {
+      display: block;
+      text-align: left;
+      width: 30%;
+      background-color: $color_background_servicios;
+      border-style: none;
+      padding: 15px 15px;
+      margin: 5px;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 768px) {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+
+      .input-touch {
+        width: 100%;
+        margin: 15px 70px;
+      }
+     /* .wrap-textarea {
+        width: 100%;
+        .textarea-input {
+          display: block;
+          height: auto;
+        }
+      }*/
+    }
+
+  }
+}
