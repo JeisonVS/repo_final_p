@@ -75,17 +75,19 @@ header {
     header nav ul {
       list-style: none;
       padding-left: 0px;
-      margin-top: 30px; }
+      /*margin-top: 30px;*/
+      clear: both; }
       header nav ul li {
+        text-align: center;
         float: left;
-        margin: 0px 17px; }
+        padding: 28px 17px; }
         header nav ul li a {
           text-decoration: none;
           color: black;
           font-weight: bold;
           font-size: 12px; }
-        header nav ul li a:hover {
-          color: #03a9f4; }
+      header nav ul li:hover a {
+        color: #03a9f4; }
     header nav .menu_collapse {
       float: right;
       display: none; }
@@ -112,53 +114,50 @@ header {
 /*
 banner*/
 .banner {
-  overflow: hidden;
-  margin: 0px; }
-  .banner .video_banner {
-    min-width: 100%;
-    position: relative; }
-
-.banner_texto {
-  box-sizing: border-box;
-  text-align: center;
   font-family: sans-serif;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  color: white;
-  margin: 25% 2% 5% 2%; }
-  .banner_texto h1 {
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    font-size: 38px; }
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .banner .banner_video {
+    min-width: 100%;
+    display: block; }
+  .banner .banner_texto {
+    color: white;
+    position: absolute;
+    display: block;
+    margin: 10px 10px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%; }
+    .banner .banner_texto h1 {
+      text-transform: uppercase;
+      width: 90%;
+      display: block;
+      margin: 5px auto;
+      font-weight: 900;
+      position: relative;
+      top: 35%; }
+    .banner .banner_texto p {
+      position: relative;
+      top: 35%;
+      width: 90%;
+      display: block;
+      margin: 5px auto; }
+    .banner .banner_texto a {
+      position: relative;
+      top: 35%;
+      width: 90%;
+      display: block;
+      margin: 5px auto; }
+  @media (max-width: 480px) {
+    .banner .banner_texto h1, .banner .banner_texto p, .banner .banner_texto a {
+      top: 25%; } }
 
-.banner:after {
-  content: "";
-  position: absolute;
-  width: 170px;
-  height: 10px;
-  left: 50%;
-  top: 478px;
-  display: block;
-  background-color: #03a9f4;
-  display: none;
-  transform: translateX(-50%); }
-
-@media (max-width: 480px) {
-  .banner_texto {
-    margin-top: 50%; }
-    .banner_texto h1 {
-      margin-bottom: 20px; }
-    .banner_texto p {
-      margin: 0px 20%; }
-    .banner_texto .boton {
-      display: none; }
-
-  .banner:after {
-    display: block; } }
 /*fin banner*/
 /*servicios*/
 .servicios {
