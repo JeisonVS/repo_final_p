@@ -166,32 +166,7 @@ banner*/
   text-align: center;
   font-family: sans-serif;
   padding: 65px 55px;
-  overflow: hidden;
-  /*  h2 {
-      font-weight: 900;
-      font-size: 30px;
-      text-transform: uppercase;
-      margin-bottom: 50px;
-      position: relative;
-      display: block;
-
-    }
-    h2:after {
-      content: " ";
-      width: 70px;
-      height: 2px;
-      transform: translateX(-50%);
-      position: absolute;
-      bottom: -30px;
-      left: 50%;
-      background-color: $color_celeste;
-    }
-    p {
-      color: grey;
-      font-weight: lighter;
-      font-size: 12px;
-      margin: 0px 15% 60px 15%;
-    }*/ }
+  overflow: hidden; }
   .servicios .servicio {
     background-color: white;
     float: left;
@@ -349,14 +324,7 @@ banner*/
   padding: 70px 5%; }
   .touch form {
     display: flex;
-    flex-flow: row wrap;
-    /*    #boton-submit {
-          margin: 35px auto 35px 0px;
-        }
-        #boton-submit:hover {
-          background-color: $color_submit_hover;
-          color: white;
-        }*/ }
+    flex-flow: row wrap; }
     .touch form .wrap {
       padding: 10px 5px;
       width: 33.33333%; }
@@ -368,16 +336,18 @@ banner*/
         padding: 15px;
         font-family: sans-serif;
         font-weight: bold; }
-    .touch form .textarea-input {
-      display: block;
-      height: 150px;
-      width: 100%;
-      background-color: #f7f7f7;
-      border-style: none;
-      padding: 15px;
-      margin: 0px 5px;
-      font-family: sans-serif;
-      font-weight: bold; }
+    .touch form .wrap-textarea {
+      width: 100%; }
+      .touch form .wrap-textarea .textarea-input {
+        width: 100%;
+        display: block;
+        height: 150px;
+        background-color: #f7f7f7;
+        border-style: none;
+        padding: 15px;
+        margin: 0px 5px;
+        font-family: sans-serif;
+        font-weight: bold; }
   @media (max-width: 768px) {
     .touch form {
       padding: 0px 15%; }
