@@ -82,6 +82,23 @@ $color_negro: #25252a;
 }
 
 /*header*/
+.menu_collapse {
+  float: right;
+  display: none;
+  .fa {
+    text-decoration: none;
+    color: $color_celeste;
+    border-radius: 5px;
+    border: solid 1px grey;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  .fa:hover {
+    color: grey;
+  }
+
+}
 
 header {
   padding: 20px 70px 0px 70px;
@@ -121,23 +138,6 @@ header {
         color: $color_celeste;
       }
     }
-    .menu_collapse {
-      float: right;
-      display: none;
-      .fa {
-        text-decoration: none;
-        color: $color_celeste;
-        border-radius: 5px;
-        border: solid 1px grey;
-        padding: 10px;
-        font-size: 2em;
-        font-weight: lighter;
-      }
-      .fa:hover {
-        color: grey;
-      }
-
-    }
 
   }
 }
@@ -149,9 +149,20 @@ header {
       ul {
         display: none;
       }
-      .menu_collapse {
-        margin-top: 10px;
+    }
+  }
+  .menu_collapse {
+    margin-top: 10px;
+    display: block;
+  }
+  header{
+    .responsive{
+      float: none;
+      ul{
         display: block;
+        li{
+          float: none;
+        }
       }
     }
   }

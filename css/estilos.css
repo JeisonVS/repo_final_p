@@ -59,6 +59,20 @@
     margin: 0px 15% 60px 15%; }
 
 /*header*/
+.menu_collapse {
+  float: right;
+  display: none; }
+  .menu_collapse .fa {
+    text-decoration: none;
+    color: #03a9f4;
+    border-radius: 5px;
+    border: solid 1px grey;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: lighter; }
+  .menu_collapse .fa:hover {
+    color: grey; }
+
 header {
   padding: 20px 70px 0px 70px;
   overflow: hidden; }
@@ -88,28 +102,23 @@ header {
           font-size: 12px; }
       header nav ul li:hover a {
         color: #03a9f4; }
-    header nav .menu_collapse {
-      float: right;
-      display: none; }
-      header nav .menu_collapse .fa {
-        text-decoration: none;
-        color: #03a9f4;
-        border-radius: 5px;
-        border: solid 1px grey;
-        padding: 10px;
-        font-size: 2em;
-        font-weight: lighter; }
-      header nav .menu_collapse .fa:hover {
-        color: grey; }
 
 @media (max-width: 890px) {
   header {
     padding: 20px 10px; }
     header nav ul {
       display: none; }
-    header nav .menu_collapse {
-      margin-top: 10px;
-      display: block; } }
+
+  .menu_collapse {
+    margin-top: 10px;
+    display: block; }
+
+  header .responsive {
+    float: none; }
+    header .responsive ul {
+      display: block; }
+      header .responsive ul li {
+        float: none; } }
 /*fin header*/
 /*
 banner*/
