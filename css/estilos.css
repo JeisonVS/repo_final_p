@@ -116,9 +116,22 @@ header {
   header .responsive {
     float: none; }
     header .responsive ul {
-      display: block; }
+      display: block;
+      /*        @keyframes aparecerLi {
+                100%{
+                  opacity: 1;
+                }
+              }*/ }
       header .responsive ul li {
-        float: none; } }
+        float: none;
+        /*          opacity: 0;
+                  -webkit-animation-name: aparecerLi;
+                  -moz-animation-name: aparecerLi;
+                  -o-animation-name: aparecerLi;
+                  animation-name: aparecerLi;
+                  animation-duration: 500ms;
+                  animation-delay: 0s;
+                  animation-fill-mode: forwards;*/ } }
 /*fin header*/
 /*
 banner*/

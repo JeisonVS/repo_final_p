@@ -16,5 +16,5 @@ function mostrarNav() {
     }
 }
 
-/*botonBurger.addEventListener("click", mostrarNav);*/
+botonBurger.addEventListener("click", mostrarNav);
 
