@@ -29,7 +29,7 @@ $color_negro: #25252a;
   padding: 15px 30px;
   display: block;
   font-weight: bold;
-  max-width: 170px;
+  max-width: 180px;
   font-size: 12px;
   margin: 35px auto;
   border-style: none;
@@ -38,11 +38,13 @@ $color_negro: #25252a;
 
 #boton-submit {
   margin: 35px auto 35px 0px;
+
 }
 
-#boton-submit:hover {
+#boton-submit:hover, #boton_portfolio:hover {
   background-color: $color_submit_hover;
   color: white;
+  cursor: pointer;
 }
 
 .boton:hover {
@@ -134,7 +136,7 @@ header {
         }
 
       }
-      li:hover a {
+      li:hover a, .active, a:active {
         color: $color_celeste;
       }
     }
@@ -145,11 +147,11 @@ header {
 @media (max-width: 890px) {
   header {
     padding: 20px 10px;
-    nav {
-      ul {
-        display: none;
-      }
+    .nav-items {
+      display: none;
+
     }
+
   }
   .menu_collapse {
     margin-top: 10px;
@@ -158,25 +160,27 @@ header {
   header {
     .responsive {
       float: none;
-      ul {
+      .nav-items {
         display: block;
         li {
           float: none;
-/*          opacity: 0;
-          -webkit-animation-name: aparecerLi;
-          -moz-animation-name: aparecerLi;
-          -o-animation-name: aparecerLi;
-          animation-name: aparecerLi;
-          animation-duration: 500ms;
-          animation-delay: 0s;
-          animation-fill-mode: forwards;*/
+
+          /*          opacity: 0;
+                    -webkit-animation-name: aparecerLi;
+                    -moz-animation-name: aparecerLi;
+                    -o-animation-name: aparecerLi;
+                    animation-name: aparecerLi;
+                    animation-duration: 500ms;
+                    animation-delay: 0s;
+                    animation-fill-mode: forwards;*/
         }
-/*        @keyframes aparecerLi {
-          100%{
-            opacity: 1;
-          }
-        }*/
+        /*        @keyframes aparecerLi {
+                  100%{
+                    opacity: 1;
+                  }
+                }*/
       }
+
     }
   }
 }
@@ -211,7 +215,7 @@ banner*/
       text-transform: uppercase;
       width: 90%;
       display: block;
-      margin: 5px auto;
+      margin: 30px auto;
       font-weight: 900;
       position: relative;
       top: 35%;
@@ -221,20 +225,20 @@ banner*/
       top: 35%;
       width: 90%;
       display: block;
-      margin: 5px auto;
+      margin: 30px auto;
     }
     a {
       position: relative;
       top: 35%;
       width: 90%;
       display: block;
-      margin: 5px auto;
+      margin: 30px auto;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 570px) {
     .banner_texto {
       h1, p, a {
-        top: 25%;
+        top: 15%;
       }
     }
   }
