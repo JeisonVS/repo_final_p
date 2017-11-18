@@ -402,17 +402,29 @@ footer {
   footer .fa-facebook {
     background-color: #5d82d1;
     padding: 15px 20px; }
+    footer .fa-facebook:hover {
+      background-color: #3864c3; }
   footer .fa-twitter {
     background-color: #40bff5; }
+    footer .fa-twitter:hover {
+      background-color: #10aff2; }
   footer .fa-google-plus {
     background-color: #eb5e4c;
     padding: 15px 12px; }
+    footer .fa-google-plus:hover {
+      background-color: #e6351e; }
   footer .fa-linkedin {
     background-color: #238cc8; }
+    footer .fa-linkedin:hover {
+      background-color: #1b6e9d; }
   footer .fa-youtube {
     background-color: #cc181e; }
+    footer .fa-youtube:hover {
+      background-color: #9e1317; }
   footer .fa-skype {
     background-color: #00aff0; }
+    footer .fa-skype:hover {
+      background-color: #008abd; }
   footer p {
     margin: 10px 0px;
     color: white;
@@ -430,10 +442,8 @@ footer {
     padding: 10px;
     margin: 10px 2px; }
   footer .fa-facebook {
-    background-color: #5d82d1;
     padding: 10px 15px; }
   footer .fa-google-plus {
-    background-color: #eb5e4c;
     padding: 10px 7px; } }
 
 /*# sourceMappingURL=estilos.css.map */
