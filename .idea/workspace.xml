@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06e80ee2-a1a6-47bc-b8e1-91c8070edcc1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/01bd47475f84c31a4b47fe4e9a81f11f6a8b94c6/estilos.scssc" afterPath="$PROJECT_DIR$/.sass-cache/01bd47475f84c31a4b47fe4e9a81f11f6a8b94c6/estilos.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/estilos.css" afterPath="$PROJECT_DIR$/css/estilos.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/estilos.css.map" afterPath="$PROJECT_DIR$/css/estilos.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/estilos.scss" afterPath="$PROJECT_DIR$/sass/estilos.scss" />
@@ -33,8 +32,8 @@
       <file leaf-file-name="estilos.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/estilos.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="564" column="48" lean-forward="false" selection-start-line="564" selection-start-column="48" selection-end-line="564" selection-end-column="48" />
+            <state relative-caret-position="294">
+              <caret line="441" column="57" lean-forward="false" selection-start-line="441" selection-start-column="57" selection-end-line="441" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -225,16 +224,15 @@
       <workItem from="1510586863915" duration="19929000" />
       <workItem from="1510671984262" duration="29592000" />
       <workItem from="1510945864300" duration="6946000" />
-      <workItem from="1510977462735" duration="1156000" />
+      <workItem from="1510977462735" duration="1896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81276000" />
+    <option name="totallyTimeSpent" value="82016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11200586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -382,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/estilos.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="564" column="48" lean-forward="false" selection-start-line="564" selection-start-column="48" selection-end-line="564" selection-end-column="48" />
+        <state relative-caret-position="294">
+          <caret line="441" column="57" lean-forward="false" selection-start-line="441" selection-start-column="57" selection-end-line="441" selection-end-column="57" />
           <folding />
         </state>
       </provider>

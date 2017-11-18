@@ -324,13 +324,21 @@ banner*/
       .expertos .expertos-galeria .experto figcaption .fa-facebook {
         background-color: #5d82d1;
         padding: 15px 18px; }
+        .expertos .expertos-galeria .experto figcaption .fa-facebook:hover {
+          background-color: #3864c3; }
       .expertos .expertos-galeria .experto figcaption .fa-twitter {
         background-color: #40bff5; }
+        .expertos .expertos-galeria .experto figcaption .fa-twitter:hover {
+          background-color: #10aff2; }
       .expertos .expertos-galeria .experto figcaption .fa-google-plus {
         background-color: #eb5e4c;
         padding: 15px 12px; }
+        .expertos .expertos-galeria .experto figcaption .fa-google-plus:hover {
+          background-color: #e6351e; }
       .expertos .expertos-galeria .experto figcaption .fa-linkedin {
         background-color: #238cc8; }
+        .expertos .expertos-galeria .experto figcaption .fa-linkedin:hover {
+          background-color: #1b6e9d; }
     .expertos .expertos-galeria .experto:hover {
       box-shadow: 0px 28px 32px -1px grey; }
   @media (max-width: 768px) {

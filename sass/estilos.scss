@@ -419,16 +419,28 @@ banner*/
         .fa-facebook {
           background-color: $color_facebook;
           padding: 15px 18px;
+          &:hover{
+           background-color: darken($color_facebook, 10%);
+          }
         }
         .fa-twitter {
           background-color: $color_twitter;
+          &:hover{
+            background-color: darken($color_twitter,10%);
+          }
         }
         .fa-google-plus {
           background-color: $color_google;
           padding: 15px 12px;
+          &:hover{
+            background-color: darken($color_google, 10%);
+          }
         }
         .fa-linkedin {
           background-color: $color_linkedin;
+          &:hover{
+            background-color: darken($color_linkedin, 10%);
+          }
         }
       }
 
